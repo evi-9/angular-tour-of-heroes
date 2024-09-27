@@ -1,6 +1,10 @@
-<h2 class="bene">Top Heroes</h2>
+<div class="riga">
+<h2 class="bene">TOP 4 HEROES</h2>
 <div class="heroes-menu">
   <a mat-raised-button *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-  {{hero.name}}
+    <img style="    position: relative;
+    top: 3px;width: 12%!important;margin-right:7px;" [src]="hero.src" alt="{{ hero.name }}">
+ {{hero.name}}
   </a >
+</div>
 </div>

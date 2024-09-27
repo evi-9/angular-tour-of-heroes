@@ -1,8 +1,11 @@
+<mat-card id="cartamsg" appearance="outlined">
 <div *ngIf="messageService.messages.length">
 
     <h2>Messages</h2>
-    <button type="button" class="clear"
+    <h5>Messages Component</h5>
+    <button style="margin-bottom:20px;" mat-flat-button type="button" class="clear"
             (click)="messageService.clear()">Clear messages</button>
-    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+            <mat-card-content><div *ngFor='let message of messageService.messages'> {{message}} </div></mat-card-content>
   
   </div>
+</mat-card>

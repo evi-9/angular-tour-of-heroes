@@ -1,8 +1,15 @@
-<div *ngIf="hero">
+<div id="my_hero" class="riga" *ngIf="hero">
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div>id: {{hero.id}}</div>
+    <mat-card id="cartamsg" appearance="outlined">
+    <div>Hero ID: {{hero.id}}</div>
     <div>
-      <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+      <form>
+      <mat-form-field class="example-full-width">
+      <mat-label for="hero-name">Change Hero Name: </mat-label>
+      <textarea matInput placeholder="name" id="hero-name" [(ngModel)]="hero.name" name="heroName"></textarea>
+    </mat-form-field>
+  </form>
     </div>
+    <button style="width:200px;margin-top:30px;" mat-flat-button (click)="openDialog()" [disabled]="isDisabled">Launch Dialog</button>
+  </mat-card>
   </div>

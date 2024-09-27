@@ -7,6 +7,8 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import { RouterModule } from '@angular/router';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-heroes',
@@ -20,8 +22,9 @@ import { RouterModule } from '@angular/router';
     NgIf,
     UpperCasePipe,
     HeroDetailComponent,
-    RouterModule
-  
+    RouterModule,
+    MatCardModule,
+    MatButtonModule
   ]
 })
 export class HeroesComponent implements OnInit {

@@ -1,0 +1,12 @@
+<p style="font-size:11px!important;" mat-dialog-title>MAGGIORI INFORMAZIONI</p>
+
+<mat-dialog-content> 
+  <img style="    width: 35%!important;" [src]="hero.src" alt="{{ hero.name }}">
+  <p style="font-size:9px!important;margin-top:20px;margin-bottom:-10px;" >NOME EROE:</p>
+  <h3 style="font-size:20px!important;">{{hero.name}}</h3> 
+  <p style="font-size:9px!important;margin-bottom:-1px;">DESCRIZIONE:</p>
+  <p> {{ hero.descrizione }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

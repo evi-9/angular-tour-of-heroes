@@ -1,13 +1,22 @@
+
+
 /* Application-wide Styles */
 h1 {
-    color: #369;
+    color: rgb(24, 24, 24);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
+    font-weight: 500!important;
+    letter-spacing: 1px;
   }
   h2, h3 {
-    color: #444;
+   
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-size: 30px!important;
+    font-weight: 600!important;
+    letter-spacing: 1px;
+    color: #797979;
+    text-transform: uppercase;
+    
   }
   body {
     margin: 2em;
@@ -16,6 +25,15 @@ h1 {
     color: #333;
     font-family: Cambria, Georgia, serif;
   }
+
+  .riga{
+    margin-top:4%;
+    margin-bottom:4%;
+  }
+
+  mat-card {padding:4%;}
+
+   /*
   button {
     background-color: #eee;
     border: none;
@@ -44,3 +62,12 @@ h1 {
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-messages {    display: block;
+  width: 50% ;
+  margin-left: auto;
+  margin-right: auto;
+}

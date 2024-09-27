@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import {MatButtonModule} from '@angular/material/button';
     HeroesComponent,
     MatSlideToggleModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatCardModule,
   ],
   providers: [
     provideAnimationsAsync()
